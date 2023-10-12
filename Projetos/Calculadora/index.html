@@ -11,7 +11,33 @@
         <h1>Calculadora Digital</h1>
     </header>
     <main>
-        <input type="number" name="" id="">
+        <div class="calculadora">
+            <input type="number" name="number" id="display" readonly>
+            <br>
+            <button class="c" onclick="limpar()">Limpar</button>
+            <br>
+            <div>
+                <button onclick="concatenar('7')">7</button>
+                <button onclick="concatenar('8')">8</button>
+                <button onclick="concatenar('9')">9</button>
+                <button onclick="concatenar('+')">+</button>
+                <br>
+                <button onclick="concatenar('4')">4</button>
+                <button onclick="concatenar('5')">5</button>
+                <button onclick="concatenar('6')">6</button>
+                <button onclick="concatenar('-')">-</button>
+                <br>
+                <button onclick="concatenar('1')">1</button>
+                <button onclick="concatenar('2')">2</button>
+                <button onclick="concatenar('3')">3</button>
+                <button onclick="concatenar('*')">*</button>
+                <br>
+                <button onclick="concatenar('0')">0</button>
+                <button onclick="concatenar('.')">.</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="concatenar('/')">/</button>
+            </div>
+        </div>
     </main>
     <footer>
 

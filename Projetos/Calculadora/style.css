@@ -14,3 +14,47 @@ header > h1 {
     padding: 20px;
     text-align: center;
 }
+
+.calculadora {
+    background-color: black;
+    max-width: 250px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+input{
+    height: 70px;
+    width: 250px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.c {
+    width: 75px;
+    display: block;
+    margin: 0px 10px;
+    border: none;
+    padding: 4px;
+    background-color: rgb(255, 51, 0);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.calculadora > div {
+    text-align: center;
+}
+
+.calculadora > div > button{
+    width: 55px;
+    height: 55px;
+    margin: 4px 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+}
