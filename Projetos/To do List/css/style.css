@@ -1,2 +1,103 @@
 @charset "UTF-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 50px;
+}
+header > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    padding: 10px 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imagens{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#imagens > img{
+    width: 80px;
+    cursor: pointer;
+}
+.caixa{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(90, 90, 90);
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.c2{
+    display: none !important;
+}
+#adicionar-tarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#adicionar-tarefa > label{
+    padding: 10px 0;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+#adicionar-tarefa > input{
+    width: 150px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+#adicionar-tarefa > button{
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #FFE177;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
+}
+#remover-tarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botoes{
+    padding: 10px;
+}
+.botoes > button{
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
+}
+#botao-remov{
+    background-color: #C63E3E;
+}
+#botao-select{
+    background-color: #90D8F9;
+}
+footer > address{
+    text-align: center;
+    margin: 10px;
+}

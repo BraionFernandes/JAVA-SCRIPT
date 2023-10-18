@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do Avançado</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
+    <title>To do Avançado</title>
 </head>
 <body>
-    
-    
+    <header>
+        <h1>Lista de Tarefas Virtual</h1>
+    </header>
+    <main>
+        <div id="imagens" class="caixa c1">
+            <img id="add-trf" src="../img/adicionar.png" alt="">
+            <img id="rmv-trf" src="../img/remover-arquivo.png" alt="">
+            <img id="trf-andamento" src="../img/planejamento.png" alt="">
+            <img id="trf-concluida" src="../img/complacente.png" alt="">
+        </div>
+        <div id="adicionar-tarefa" class="caixa c2">
+            <label class="add-tarefa-titulo" for="nomeTarefa">Nome da tarefa: </label>
+            <input class="add-tarefa-caixa" type="text" name="nomeTarefa" id="nomeTarefa">
+            <button id="add-tarefa-botao" class="add-tarefa-botao botao">Adicionar Tarefa</button>
+        </div>
+        <div id="remover-tarefa" class="caixa c2">
+            <div class="botoes">
+                <button id="botao-remov" class="botao">Remover Tarefa</button>
+                <button id="botao-select" class="botao">Tarefa Selecionada</button>
+            </div>
+            <div id="gt-caixa" class="gerenciar-tarefa-caixa"></div>
+        </div>
+        <div id="tarefas" class="caixa c2">
+
+        </div>
+        
+        <div id="tarefas-concluidas" class="caixa c2">
+
+        </div>
+    </main>
+    <footer>
+        <address>&copy; Braion Fernandes</address>
+    </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
