@@ -13,28 +13,27 @@
     <main>
         <div id="imagens" class="caixa c1">
             <img id="add-trf" src="../img/adicionar.png" alt="">
-            <img id="rmv-trf" src="../img/remover-arquivo.png" alt="">
             <img id="trf-andamento" src="../img/planejamento.png" alt="">
             <img id="trf-concluida" src="../img/complacente.png" alt="">
         </div>
         <div id="adicionar-tarefa" class="caixa c2">
+            <h2>Adicionar uma nova Tarefa</h2>
             <label class="add-tarefa-titulo" for="nomeTarefa">Nome da tarefa: </label>
             <input class="add-tarefa-caixa" type="text" name="nomeTarefa" id="nomeTarefa">
             <button id="add-tarefa-botao" class="add-tarefa-botao botao">Adicionar Tarefa</button>
         </div>
-        <div id="remover-tarefa" class="caixa c2">
-            <div class="botoes">
-                <button id="botao-remov" class="botao">Remover Tarefa</button>
-                <button id="botao-select" class="botao">Tarefa Selecionada</button>
-            </div>
-            <div id="gt-caixa" class="gerenciar-tarefa-caixa"></div>
-        </div>
         <div id="tarefas" class="caixa c2">
-
+            <div id="tarefas-titulo">
+                <h2>Tarefas em andamento</h2>
+                <h3>Quando estiver com uma tarefa selecionada você poderar apagar ou concluir ela com os botões abaixo.</h3>
+            </div>
+            <div id="tarefas-botao">
+                <img id="removerTarefa" class="img_tarefa" src="../img/remover-arquivo.png"></img>
+                <img id="concluirTarefa" class="img_tarefa" src="../img/complacente.png" alt="">
+            </div>
         </div>
-        
         <div id="tarefas-concluidas" class="caixa c2">
-
+            <h2>Tarefas concluidas</h2>
         </div>
     </main>
     <footer>

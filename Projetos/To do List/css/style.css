@@ -39,6 +39,14 @@ main{
     border: 5px solid black;
     border-radius: 20px;
     margin: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.caixa > h2, #tarefas-titulo > h2 {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
 }
 .c2{
     display: none !important;
@@ -72,32 +80,56 @@ main{
     border: none;
     border-radius: 20px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
-}
-#remover-tarefa{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.botoes{
-    padding: 10px;
-}
-.botoes > button{
-    font-weight: bold;
-    width: 120px;
-    height: 50px;
-    padding: 5px;
-    margin: 10px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
-}
-#botao-remov{
-    background-color: #C63E3E;
-}
-#botao-select{
-    background-color: #90D8F9;
+    cursor: pointer;
 }
 footer > address{
     text-align: center;
     margin: 10px;
+}
+#tarefas{
+    height: auto;
+}
+#tarefas > p{
+    font-size: 1.3em;
+    background-color: #FFE177;
+    margin: 10px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px;
+}
+#tarefas-titulo > h3{
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+#tarefas-botao{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+}
+#tarefas-botao > img{
+    width: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+#enviar{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 16px;
+}
+#tarefas-concluidas > p{
+    font-size: 1.3em;
+    background-color: #A0E5A5;
+    margin: 10px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px;
+}
+.selecionado{
+    background-color: #C63E3E !important;
+    border: 2px solid red !important;
+    color: white !important;
 }
