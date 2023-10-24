@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+#calculadora{
+    background-color: rgb(128, 0, 0);
+    margin: 20px auto;
+    padding: 20px;
+    width: 500px;
+}
+#calcNumeros{
+    text-align: center;
+}
+#calcNumeros > input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+}
+#calcSimbs{
+    text-align: center;
+}
+#calcSimbs > button {
+    width: 70px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+#result{
+    border-top: 2px solid white;
+}
+#result-p{
+    width: 100px;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: white;
+}
