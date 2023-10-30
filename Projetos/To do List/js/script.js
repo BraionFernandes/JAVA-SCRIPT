@@ -39,7 +39,6 @@ const criarTarefa=(curso)=>{
         tirarSelecao()
         evt.target.classList.toggle("selecionado")
     })
-
     return novoElemento
 }
 btnAddTarefa.addEventListener("click",(evt)=>{
@@ -68,5 +67,7 @@ concluirTarefa.addEventListener("click",(evt)=>{
     if(tc!=undefined){
         div_tarefasConcluidas.appendChild(tc)
         tc.removeAttribute("class","selecionado")
+        tc.setAttribute("class","tarefaConcluida")
     }
+    
 })

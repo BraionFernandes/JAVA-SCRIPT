@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 63 - desafio</title>
+</head>
+<body>
+    <main>
+        <div id="addVeiculos">
+            <h2 id="militar" class="escondido">Militar</h2>
+            <h2 id="civil">Civil</h2>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label for="marca">Marca:</label>
+                <input type="text" name="marca" id="marca">
+            </div>
+
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="text" name="cor" id="cor">
+            </div>
+
+            <div>
+                <label for="portas">Portas:</label>
+                <input type="text" name="portas" id="portas">
+            </div>
+
+            <div id="blindagem" class="escondido">
+                <label for="blindagem">Blindagem:</label>
+                <input type="number" name="blindagem" id="blindagem-input">
+            </div>
+
+            <div id="municao" class="escondido">
+                <label for="municao">Munição:</label>
+                <input type="number" name="municao" id="municao-input">
+            </div>
+
+            <div>
+                <h3>Tipo de Veiculo</h3>
+                <button id="tipo-militar">Militar</button>
+                <button id="tipo-civil">Civil</button>
+            </div>
+
+            <button id="btn-add">Adicionar</button>
+        </div>
+        <div id="veiculosTabela"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
