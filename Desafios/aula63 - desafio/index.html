@@ -43,13 +43,22 @@
 
             <div>
                 <h3>Tipo de Veiculo</h3>
-                <button id="tipo-militar">Militar</button>
-                <button id="tipo-civil">Civil</button>
+                <label for="tipo-militar">Militar:</label>
+                <input type="radio" name="typeV" id="tipo-militar">
+                <label for="tipo-civil">Civil:</label>
+                <input type="radio" name="typeV" id="tipo-civil" checked>
             </div>
 
             <button id="btn-add">Adicionar</button>
         </div>
-        <div id="veiculosTabela"></div>
+        <h4>Civil</h4>
+        <div id="veiculosCivil" class="veiculosTabela">
+            
+        </div>
+        <h4>Militar</h4>
+        <div id="veiculosMilitar" class="veiculosTabela">
+            
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
