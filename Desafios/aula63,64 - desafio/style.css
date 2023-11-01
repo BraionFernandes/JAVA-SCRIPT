@@ -55,6 +55,19 @@
     padding: 5px;
     margin: 5px;
 }
+#btn-remover{
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+#btn-remover:hover{
+    background-color: #8f0000;
+}
 h3{
     text-align: center;
     padding: 5px;

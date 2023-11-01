@@ -55,18 +55,32 @@ btn_add.addEventListener("click",()=>{
     
     if(tipoMilitar.checked){
         const novoElemento=document.createElement("div")
+        const btnRemover=document.createElement("button")
         novoElemento.setAttribute("id","M"+m)
         novoElemento.setAttribute("class","div-veiculo")
+        btnRemover.setAttribute("id","btn-remover")
         novoElemento.innerHTML=`Nome: ${newMilitarVeiculo.nome}<br>Marca: ${newMilitarVeiculo.marca}<br>Cor: ${newMilitarVeiculo.cor}<br>Portas: ${newMilitarVeiculo.portas}<br>Blindagem: ${newMilitarVeiculo.blindagem}<br>Munição: ${newMilitarVeiculo.municao}`
+        btnRemover.innerHTML="Remover"
+        novoElemento.appendChild(btnRemover)
         veiculosMilitar.appendChild(novoElemento)
+        btnRemover.addEventListener("click",(evt)=>{
+            evt.target.parentNode.remove()
+        })
         m++
     }
     if(tipoCivil.checked){
         const novoElemento=document.createElement("div")
+        const btnRemover=document.createElement("button")
         novoElemento.setAttribute("id","C"+c)
         novoElemento.setAttribute("class","div-veiculo")
+        btnRemover.setAttribute("id","btn-remover")
         novoElemento.innerHTML=`Nome: ${newCivilVeiculo.nome}<br>Marca: ${newCivilVeiculo.marca}<br>Cor: ${newCivilVeiculo.cor}<br>Portas: ${newCivilVeiculo.portas}`
+        btnRemover.innerHTML="Remover"
+        novoElemento.appendChild(btnRemover)
         veiculosCivil.appendChild(novoElemento)
+        btnRemover.addEventListener("click",(evt)=>{
+            evt.target.parentNode.remove()
+        })
         c++
     }
     nome.value=""
