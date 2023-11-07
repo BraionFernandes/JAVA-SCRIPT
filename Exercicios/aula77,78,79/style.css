@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    background-color: #cfcfcf;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px;
+    margin: 20px auto;
+}
+#divData{
+    text-align: center;
+}
+#divRelogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #444;
+    color: rgb(0, 255, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+}
+#tmpAlarme{
+    display: block;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.comandos{
+    margin: 5px;
+    text-align: center;
+}
+.comandos>button{
+    padding: 6px;
+    background-color: #444;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 2px;
+}
+.alarme{
+    background-color: #f00 !important;
+}
