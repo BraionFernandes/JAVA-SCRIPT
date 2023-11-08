@@ -27,18 +27,49 @@ class Bola{
         this.desenhar()
         this.controle=setInterval(this.controlar,10)
         this.eu=document.getElementById(this.id)
+        numBola++
+        numObjetos.innerHTML=numBola
     }
     minhaPos=()=>{
-
+        return this.arrayBolas.indexOf(this)
     }
     remover=()=>{
-
+        clearInterval(this.controle)
+        bolas=bolas.filter((b)=>{
+            if(b.id!=this.id){
+                return b
+            }
+        })
+        this.eu.remove()
+        numBola--
+        numObjetos.innerHTML=numBola
     }
     desenhar=()=>{
+        const div=document.createElement("div")
+        div.setAttribute("id",this.id)
+        div.setAttribute("class","bola")
+        div.setAttribute("style",`left:${this.px}px;top:${this.py}px;width:${this.tamanho}px;height:${this.tamanho}px;background-color:rgb(${this.r},${this.g},${this.b})`)
+        this.palco.appendChild(div)
+    }
+    colisaoBordas=()=>{
+        if(this.px+this.tamanho>=larguraPalco){
+            this.dirx=-1
+        }else if(this.px<=0)
+        this.dirx=1
 
+        if(this.py+this.tamanho>=alturaPalco){
+            this.diry=-1
+        }else if(this.py<=0)
+        this.diry=1
     }
     controlar=()=>{
-
+        this.colisaoBordas()
+        this.px+=this.dirx*this.velx
+        this.py+=this.diry*this.vely
+        this.eu.setAttribute("style",`left:${this.px}px;top:${this.py}px;width:${this.tamanho}px;height:${this.tamanho}px;background-color:rgb(${this.r},${this.g},${this.b})`)
+        if((this.px>larguraPalco)||(this.py>alturaPalco)){
+            this.remover()
+        }
     }
 }
 
@@ -49,11 +80,11 @@ window.addEventListener("resize",(evt)=>{
 btnAdd.addEventListener("click",(evt)=>{
     const quantidade=qntObjetos.value
     for(let i=0;i<quantidade;i++){
-
+        bolas.push(new Bola(bolas,palco))
     }
 })
 btnRemover.addEventListener("click",(evt)=>{
     bolas.map((b)=>{
-
+        b.remover()
     })
 })
