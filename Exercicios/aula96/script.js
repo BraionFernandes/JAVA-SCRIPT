@@ -1,13 +1,13 @@
-import contato from "./contatos.js";
-
+import c from "./contatos.js";
 const listaContatos=document.getElementById("listaContatos")
-const btnGravar=document.getElementById("btnGravar")
+const btnGravar=document.getElementById("btn_gravar")
 
 btnGravar.addEventListener("click",(evt)=>{
     const cont={
-        nome:document.getElementById("nome").value,
-        telefone:document.getElementById("telefone").value,
-        email:document.getElementById("email").value
+        nome:document.getElementById("f_nome").value,
+        telefone:document.getElementById("f_telefone").value,
+        email:document.getElementById("f_email").value
     }
-    contato.addContato(cont,listaContatos)
+    c.addContato(cont,listaContatos)
+    console.log(c.getTodosContatos())
 })
