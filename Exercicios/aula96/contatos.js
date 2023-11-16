@@ -35,12 +35,15 @@ const contato={
             destinoDOM.appendChild(div)
 
             btn.addEventListener("click",(evt)=>{
-                contatos=contatos.filter((i)=>{
-                    return i["nome"]!=div.children[0].innerHTML
-                })
+                const newContatos=contatos.filter((i) => {
+                    return i["email"] !== div.children[2].innerHTML;
+                });
+                contatos.length=0;
+                contatos.push(...newContatos);
+                div.remove()
+
                 console.log(contatos)
-                //div.remove()
-            })
+            });
         })
     }
 }
