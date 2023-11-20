@@ -5,14 +5,19 @@ class Jogador{
     }
 }
 
-let jogadores=[new Jogador("j1"),new Jogador("j2"),new Jogador("j3"),new Jogador("j4")]
+let jogadores=[new Jogador("j1"),new Jogador("j2"),new Jogador("j3"),new Jogador("j4"),new Jogador("j1")]
 
-let s1=jogadores[0].id
+let s=[0]
 
 
-jogadores=jogadores.filter((j)=>{
-    return j.id!=s1
+let Sjogadores=jogadores.filter((j)=>{
+    return j.nome=="j1"
+})
+
+s=Sjogadores.map((j)=>{
+    return j.id
 })
 
 console.log(jogadores)
-console.log(s1)
+console.log(Sjogadores)
+console.log(s)
