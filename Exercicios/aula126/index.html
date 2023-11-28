@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 126</title>
+</head>
+<body>
+    <div style="width: 500px; height: 500px;">
+        <canvas id="grafico1"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('grafico1');
+
+        let labelsX=["ITALIA","RUSSIA","CANADA","FRANCA","REINO UNIDO","INDIA","ALEMANHA","JAPÃO","CHINA","USA"]
+        let valores=[1.997,2.113,2.2,2.778,3.199,3.469,4.031,4.301,18.321,25.035]
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: labelsX,
+            datasets: [{
+              label: 'PIB em TRILHÕES',
+              data: valores,
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+</body>
+</html>

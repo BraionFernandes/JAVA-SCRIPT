@@ -1,0 +1,13 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    border: 3px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #888;
+    color: white;
+}
