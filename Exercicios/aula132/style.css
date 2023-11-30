@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 5px;
+}
+#cronometro{
+    margin: 40px;
+}
+#contador{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+#botoes{
+    text-align: center;
+}
+.btn{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 5px;
+}
