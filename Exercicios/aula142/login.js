@@ -10,14 +10,15 @@ class login{
         fetch(this.endpoint)
         .then(res=>res.json())
         .then(res=>{
-            if(res){
-                this.logado=true;
-                this.matlogado=mat;
-                this.nomelogado=res.nome;
-                this.acessologado=res.acesso;
-            }else{
-                console.log("Usuario não encontrado!");
-            }
+            console.log(res)
+            // if(res){
+            //     this.logado=true;
+            //     this.matlogado=mat;
+            //     this.nomelogado=res.nome;
+            //     this.acessologado=res.acesso;
+            // }else{
+            //     console.log("Usuario não encontrado!");
+            // }
         })
     }
 }
