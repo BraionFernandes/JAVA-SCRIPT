@@ -1,3 +1,8 @@
+let mat=null;
+let pas=null;
+let nome=null;
+let acesso=null;
+
 class login{
     static logado=false;
     static matlogado=null;
@@ -104,48 +109,34 @@ class login{
         logoLogin.setAttribute("id","logoLogin");
         logoLogin.setAttribute("class","logoLogin");
         baseLogin.appendChild(logoLogin);
-
-        // this.endpoint+= `?matricula=${mat}&senha=${pas}`;
-        // fetch(this.endpoint)
-        // .then(res=>res.json())
-        // .then(res=>{
-        //     if(res){
-        //         this.logado=true;
-        //         this.matlogado=mat;
-        //         this.nomelogado=res.nome;
-        //         this.acessologado=res.acesso;
-        //     }else{
-        //         console.log("Usuario não encontrado!");
-        //     }
-        // })
     }
 
     static verifLogin=()=>{
-        const mat=document.querySelector("#username").value;
-        const pas=document.querySelector("#senha").value;
+        mat=document.querySelector("#username").value;
+        pas=document.querySelector("#senha").value;
 
-        const endpoint=`https://loginv1.braionkuro01.repl.co/?matricula=${mat}&senha=${pas}`;
-        fetch(endpoint)
-        .then(res=>res.json())
-        .then(res=>{
-            console.log(res)
-            // if(res){
-            //     this.logado=true;
-            //     this.matlogado=mat;
-            //     this.nomelogado=res.nome;
-            //     this.acessologado=res.acesso;
-            //     return true;
-            // }else{
-            //     window.alert("Usuario não encontrado!");
-            // }
-        })
+        if(mat=="123" && pas=="123"){
+            nome= "Bruno"
+            acesso= 10
 
-        // if(mat=="123" && pas=="123"){
-        //     return true;
-        // }else{
-        //     return false;
-        // }
-    }
+            console.log(nome);
+            console.log(acesso);
+        }
+
+            if(mat=="123" && pas=="123"){
+                this.logado=true;
+                this.matlogado=mat;
+                this.nomelogado=nome;
+                this.acessologado=acesso;
+                this.fechar();
+            }else{
+                this.logado=false;
+                this.matlogado=null;
+                this.nomelogado=null;
+                this.acessologado=null;
+                alert("Login não efetuado! Username ou senha incorretos!");
+            }
+        }
 
     static fechar=()=>{
         const fundoLogin=document.querySelector("#fundoLogin");

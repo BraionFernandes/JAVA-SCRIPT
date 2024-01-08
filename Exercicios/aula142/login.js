@@ -3,7 +3,7 @@ class login{
     static matlogado=null;
     static nomelogado=null;
     static acessologado=null;
-    static endpoint="https://loginv1.braionkuro01.repl.co/";
+    static endpoint="";
     
     static login=(mat, pas)=>{
         this.endpoint+= `?matricula=${mat}&senha=${pas}`
